@@ -10,3 +10,5 @@ target/
 .settings/
 .vscode/
 .DS_Store
+.classpath
+.project
