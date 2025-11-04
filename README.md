@@ -98,3 +98,10 @@ The `llama-benchmark/` directory in this repository contains an unrelated Python
 - Java 17
 - Maven
 - JUnit 5
+
+## Verification
+
+This repository has been verified for:
+- Repository access
+- Lint command execution
+- PR creation workflow
