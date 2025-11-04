@@ -15,7 +15,7 @@ public class HelloWorldService {
 
     @RestController
     @RequestMapping("/api")
-    class HelloWorldController {
+    public static class HelloWorldController {
 
         @GetMapping("/hello")
         public String sayHello() {
