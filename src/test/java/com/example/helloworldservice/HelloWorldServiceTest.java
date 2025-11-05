@@ -19,7 +19,7 @@ class HelloWorldServiceTest {
     void testSayHelloReturnsCorrectMessage() throws Exception {
         mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World! This is a test change."));
     }
 
     @Test
@@ -32,12 +32,12 @@ class HelloWorldServiceTest {
     void testEndpointAccessibleAtCorrectPath() throws Exception {
         mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World! This is a test change."));
     }
 
     @Test
     void testResponseBodyIsExactlyHelloWorld() throws Exception {
         mockMvc.perform(get("/api/hello"))
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World! This is a test change."));
     }
 }

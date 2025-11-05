@@ -26,7 +26,7 @@ class HelloWorldIntegrationTest {
     void testFullEndToEndHttpRequestResponse() throws Exception {
         mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World! This is a test change."));
     }
 
     @Test
@@ -34,7 +34,7 @@ class HelloWorldIntegrationTest {
         mockMvc.perform(get("/api/hello"))
                 .andExpect(status().isOk())
                 .andExpect(header().exists("Content-Type"))
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World! This is a test change."));
     }
 
     @Test
